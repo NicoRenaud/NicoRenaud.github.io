@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Molecular Dynamics | Academic</title>
+    <link>/tag/molecular-dynamics/</link>
+      <atom:link href="/tag/molecular-dynamics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Molecular Dynamics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 07 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Molecular Dynamics</title>
+      <link>/tag/molecular-dynamics/</link>
+    </image>
+    
+    <item>
+      <title>Molecular Junctions &amp; Machine Learning</title>
+      <link>/project/junction/</link>
+      <pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate>
+      <guid>/project/junction/</guid>
+      <description>&lt;p&gt;Grasping the molecular dynamics of small molecule in tunelling junction can provide a much deeper understanding of mechanically controlled break-junction experiments. However accurately computing the quantum transport properties along a full MD trajectory is a very costly task.&lt;/p&gt;
+&lt;p&gt;Using a finite number of training points, machine learning models can be trained to map the conformational space of the molecule to its low-bias conductance values. Linking machine learning and quantum transport would allow for a much more resolved characterization of molecular junctions and would be the first step toward generative modelling of molecular systems with desired quantum transport properties.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/junction/nnjunction_hua1248e9b83e023339d06160e76345177_298836_8ea39d6a4299f3908c2ca3fb753969c5.png 400w,
+               /project/junction/nnjunction_hua1248e9b83e023339d06160e76345177_298836_17cceee0091fe9ed5dbede1e4fa4582c.png 760w,
+               /project/junction/nnjunction_hua1248e9b83e023339d06160e76345177_298836_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;/project/junction/nnjunction_hua1248e9b83e023339d06160e76345177_298836_8ea39d6a4299f3908c2ca3fb753969c5.png&#34;
+               width=&#34;760&#34;
+               height=&#34;314&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Molecular Machine | Academic</title>
+    <link>/tag/molecular-machine/</link>
+      <atom:link href="/tag/molecular-machine/index.xml" rel="self" type="application/rss+xml" />
+    <description>Molecular Machine</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Molecular Machine</title>
+      <link>/tag/molecular-machine/</link>
+    </image>
+    
+    <item>
+      <title>Design of Single Molecule Machines</title>
+      <link>/project/machine/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/machine/</guid>
+      <description>&lt;p&gt;The control of the mechanical properties of single molecule in planar junction holds great promises for the future of nanotechology. To this end a better understanding of the mechanical response of single molecule on conducting surface when excited with a tunnelling current is necessary.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Nanocar_Race&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NanoCar race&lt;/a&gt;  served as a benchmark for scientists around the world to test their design of single molecule machine powered by tunelling current. The &lt;a href=&#34;https://nanocar-race.cnrs.fr/equipes-ch.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Swiss team&lt;/a&gt; won the race on gold surface with their NanoDragster whose design and test was heavily backed by ab-initio calculations.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/machine/ch-molecule3_hu2f2c45ac12e6ca8051df396aa64a08d8_34403_a0d7dad91b4bee43ce126974b4d48930.jpg 400w,
+               /project/machine/ch-molecule3_hu2f2c45ac12e6ca8051df396aa64a08d8_34403_f44d03b34c4311216e620000c64cd41b.jpg 760w,
+               /project/machine/ch-molecule3_hu2f2c45ac12e6ca8051df396aa64a08d8_34403_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;/project/machine/ch-molecule3_hu2f2c45ac12e6ca8051df396aa64a08d8_34403_a0d7dad91b4bee43ce126974b4d48930.jpg&#34;
+               width=&#34;563&#34;
+               height=&#34;342&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/machine/drag_hu407c48d32a988315bf3d043b9c5b19b2_169026_4944433a999f9cf6cbc927e24b45951c.PNG 400w,
+               /project/machine/drag_hu407c48d32a988315bf3d043b9c5b19b2_169026_66125ee04fffaa75ceb0520f7a2bbfbc.PNG 760w,
+               /project/machine/drag_hu407c48d32a988315bf3d043b9c5b19b2_169026_1200x1200_fit_lanczos_2.PNG 1200w&#34;
+               src=&#34;/project/machine/drag_hu407c48d32a988315bf3d043b9c5b19b2_169026_4944433a999f9cf6cbc927e24b45951c.PNG&#34;
+               width=&#34;485&#34;
+               height=&#34;456&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fa fa-newspaper  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://pubs.acs.org/doi/abs/10.1021/acsnano.7b03955&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Design and characterization of an electrically powered single molecule on gold&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

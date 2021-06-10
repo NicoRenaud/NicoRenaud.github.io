@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QMCTorch | Academic</title>
+    <link>/tag/qmctorch/</link>
+      <atom:link href="/tag/qmctorch/index.xml" rel="self" type="application/rss+xml" />
+    <description>QMCTorch</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 12 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>QMCTorch</title>
+      <link>/tag/qmctorch/</link>
+    </image>
+    
+    <item>
+      <title>Deep Learning approach of Quantum Monte Carlo Simulations</title>
+      <link>/project/qmc/</link>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/project/qmc/</guid>
+      <description>&lt;p&gt;Quantum Monte Carlo (QMC) simulations hold great promises for exascale electronic structure calculations as the MCMC sampling can easily be distriubted on large scale compute infrastructure with minimal communication cost. QMC simulations consists of interleaed sampling and optimization of a wave function ususally expressed as :&lt;/p&gt;
+&lt;p&gt;$$\Psi(R) = J(R) \sum_n c_n D_n^\uparrow(Q) D_n^\downarrow(Q)$$&lt;/p&gt;
+&lt;p&gt;where $J(R)$ is a Jastrow factor capturing electronic correlation and $D_n^\uparrow(Q)$ and $D_n^\downarrow(Q)$ Slater determinants constructed over the basis of molecular orbitals and computed at the backflow-transformed coordinates, $Q$, of the spin up and down electrons.&lt;/p&gt;
+&lt;p&gt;The code we developped, QMCTorch, implement these wave function ansatz in a quantum aware neural network. Well known ingredients of the wave function, e.g. the atomic and molecular orbitals have been directly implemented in the architecture of the network. Other ingredients such a the Jastrow factor and the backflow transformation kernels can be defined as sub-network allowing for a very flexible functional form.&lt;/p&gt;
+&lt;p&gt;This semi-analytical wave function ansatz allows for fast calculations of the key observables, e.g. the kinetic energy and atomic forces, via the Jacobi Formula. For example in absence of backflow and Jastrow the kinetic energy can be evaluated with the help of  :&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial^2 \det{A}}{\partial x_i^2} = Tr(A^{-1} \frac{\partial^2 A}{\partial x_i^2})$$&lt;/p&gt;
+&lt;p&gt;Hence avoiding a costly computation of the diagonal Hessian via automatic differentiation.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.github.com/NLESC-JCER/QMCTorch/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QMCTorch&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

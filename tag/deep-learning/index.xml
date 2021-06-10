@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning | Academic</title>
+    <link>/tag/deep-learning/</link>
+      <atom:link href="/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Deep Learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 12 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Deep Learning</title>
+      <link>/tag/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>Deep Learning approach of Quantum Monte Carlo Simulations</title>
+      <link>/project/qmc/</link>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/project/qmc/</guid>
+      <description>&lt;p&gt;Quantum Monte Carlo (QMC) simulations hold great promises for exascale electronic structure calculations as the MCMC sampling can easily be distriubted on large scale compute infrastructure with minimal communication cost. QMC simulations consists of interleaed sampling and optimization of a wave function ususally expressed as :&lt;/p&gt;
+&lt;p&gt;$$\Psi(R) = J(R) \sum_n c_n D_n^\uparrow(Q) D_n^\downarrow(Q)$$&lt;/p&gt;
+&lt;p&gt;where $J(R)$ is a Jastrow factor capturing electronic correlation and $D_n^\uparrow(Q)$ and $D_n^\downarrow(Q)$ Slater determinants constructed over the basis of molecular orbitals and computed at the backflow-transformed coordinates, $Q$, of the spin up and down electrons.&lt;/p&gt;
+&lt;p&gt;The code we developped, QMCTorch, implement these wave function ansatz in a quantum aware neural network. Well known ingredients of the wave function, e.g. the atomic and molecular orbitals have been directly implemented in the architecture of the network. Other ingredients such a the Jastrow factor and the backflow transformation kernels can be defined as sub-network allowing for a very flexible functional form.&lt;/p&gt;
+&lt;p&gt;This semi-analytical wave function ansatz allows for fast calculations of the key observables, e.g. the kinetic energy and atomic forces, via the Jacobi Formula. For example in absence of backflow and Jastrow the kinetic energy can be evaluated with the help of  :&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial^2 \det{A}}{\partial x_i^2} = Tr(A^{-1} \frac{\partial^2 A}{\partial x_i^2})$$&lt;/p&gt;
+&lt;p&gt;Hence avoiding a costly computation of the diagonal Hessian via automatic differentiation.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.github.com/NLESC-JCER/QMCTorch/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QMCTorch&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning for Protein-Protein Interactions</title>
+      <link>/project/bio/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/project/bio/</guid>
+      <description>&lt;p&gt;The indentification of biological protein-protein interface is a crucial task of computational biology with applications ranging from drug design to evolutionary studies. The experimental characterization of these interface usually relies on expensive and time consuming methods such X-Ray crystallography. To alleviate this cost a multitude of computational approaches have been developped.&lt;/p&gt;
+&lt;p&gt;We have recently developped several machine learning based approaches for the classification and scoring of protein-protein interface. Our first attempt, iScore is based on a support vector machine approach using randow walk graph kernels using only about 100 known interfaces in the training set.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/bio/iscore_hue4f9340e8997a117fc8d7eebe432ae8d_136313_dc5be5350ca5664cb3e84041781a918c.png 400w,
+               /project/bio/iscore_hue4f9340e8997a117fc8d7eebe432ae8d_136313_97747fad73e62d5e0f8c1ec14bf9a5f7.png 760w,
+               /project/bio/iscore_hue4f9340e8997a117fc8d7eebe432ae8d_136313_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;/project/bio/iscore_hue4f9340e8997a117fc8d7eebe432ae8d_136313_dc5be5350ca5664cb3e84041781a918c.png&#34;
+               width=&#34;760&#34;
+               height=&#34;220&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.github.com/DeepRank/iScore/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;iScore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We also explored deep-learning based methods using convolutional neural networks. Featurization of the interface is obtained via gaussian expansion of atomic and residue features on a 3D grid. These models require a large number of training sample that we obtained via molecular dynamics docking simulations on the BM5 dataset.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/bio/deeprank_hu908d1f358c0f24f790cc19447d179919_974799_e235133afe8afaa60543b724c0737f1d.png 400w,
+               /project/bio/deeprank_hu908d1f358c0f24f790cc19447d179919_974799_99a54379ad96228cec192bab815cca3b.png 760w,
+               /project/bio/deeprank_hu908d1f358c0f24f790cc19447d179919_974799_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;/project/bio/deeprank_hu908d1f358c0f24f790cc19447d179919_974799_e235133afe8afaa60543b724c0737f1d.png&#34;
+               width=&#34;760&#34;
+               height=&#34;319&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.github.com/DeepRank/DeepRank/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DeepRank&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More recently we have explored the possiblity to use graph neural network to encode the strucrture of the interface. This promising approch would remove the need to artificially augment the training data set to account for rotational invariance of the scoring function.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/bio/deeprank_gnn_hu56a12727861f07a609c523b7267e8405_361783_7573b43b577c4d2d23a24b13c5955487.png 400w,
+               /project/bio/deeprank_gnn_hu56a12727861f07a609c523b7267e8405_361783_00b1d82cf5a25d284ca4bc9ef4436201.png 760w,
+               /project/bio/deeprank_gnn_hu56a12727861f07a609c523b7267e8405_361783_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;/project/bio/deeprank_gnn_hu56a12727861f07a609c523b7267e8405_361783_7573b43b577c4d2d23a24b13c5955487.png&#34;
+               width=&#34;760&#34;
+               height=&#34;302&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.github.com/DeepRank/DeepRank-GNN/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DeepRank-GNN&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Molecular Junctions &amp; Machine Learning</title>
+      <link>/project/junction/</link>
+      <pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate>
+      <guid>/project/junction/</guid>
+      <description>&lt;p&gt;Grasping the molecular dynamics of small molecule in tunelling junction can provide a much deeper understanding of mechanically controlled break-junction experiments. However accurately computing the quantum transport properties along a full MD trajectory is a very costly task.&lt;/p&gt;
+&lt;p&gt;Using a finite number of training points, machine learning models can be trained to map the conformational space of the molecule to its low-bias conductance values. Linking machine learning and quantum transport would allow for a much more resolved characterization of molecular junctions and would be the first step toward generative modelling of molecular systems with desired quantum transport properties.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/junction/nnjunction_hua1248e9b83e023339d06160e76345177_298836_8ea39d6a4299f3908c2ca3fb753969c5.png 400w,
+               /project/junction/nnjunction_hua1248e9b83e023339d06160e76345177_298836_17cceee0091fe9ed5dbede1e4fa4582c.png 760w,
+               /project/junction/nnjunction_hua1248e9b83e023339d06160e76345177_298836_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;/project/junction/nnjunction_hua1248e9b83e023339d06160e76345177_298836_8ea39d6a4299f3908c2ca3fb753969c5.png&#34;
+               width=&#34;760&#34;
+               height=&#34;314&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

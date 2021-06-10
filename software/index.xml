@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Softwares | Academic</title>
+    <link>/software/</link>
+      <atom:link href="/software/index.xml" rel="self" type="application/rss+xml" />
+    <description>Softwares</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 27 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Softwares</title>
+      <link>/software/</link>
+    </image>
+    
+    <item>
+      <title>DeepRank</title>
+      <link>/software/deeprank/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/software/deeprank/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Husky</title>
+      <link>/software/husky/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/software/husky/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iScore</title>
+      <link>/software/iscore/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/software/iscore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pdb2sql</title>
+      <link>/software/pdb2sql/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/software/pdb2sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>QMCTorch</title>
+      <link>/software/qmctorch/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/software/qmctorch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SWAN</title>
+      <link>/software/swan/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/software/swan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Votca-XTP</title>
+      <link>/software/votca-xtp/</link>
+      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/software/votca-xtp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

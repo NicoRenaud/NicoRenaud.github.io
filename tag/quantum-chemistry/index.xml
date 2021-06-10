@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quantum Chemistry | Academic</title>
+    <link>/tag/quantum-chemistry/</link>
+      <atom:link href="/tag/quantum-chemistry/index.xml" rel="self" type="application/rss+xml" />
+    <description>Quantum Chemistry</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 12 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Quantum Chemistry</title>
+      <link>/tag/quantum-chemistry/</link>
+    </image>
+    
+    <item>
+      <title>Deep Learning approach of Quantum Monte Carlo Simulations</title>
+      <link>/project/qmc/</link>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/project/qmc/</guid>
+      <description>&lt;p&gt;Quantum Monte Carlo (QMC) simulations hold great promises for exascale electronic structure calculations as the MCMC sampling can easily be distriubted on large scale compute infrastructure with minimal communication cost. QMC simulations consists of interleaed sampling and optimization of a wave function ususally expressed as :&lt;/p&gt;
+&lt;p&gt;$$\Psi(R) = J(R) \sum_n c_n D_n^\uparrow(Q) D_n^\downarrow(Q)$$&lt;/p&gt;
+&lt;p&gt;where $J(R)$ is a Jastrow factor capturing electronic correlation and $D_n^\uparrow(Q)$ and $D_n^\downarrow(Q)$ Slater determinants constructed over the basis of molecular orbitals and computed at the backflow-transformed coordinates, $Q$, of the spin up and down electrons.&lt;/p&gt;
+&lt;p&gt;The code we developped, QMCTorch, implement these wave function ansatz in a quantum aware neural network. Well known ingredients of the wave function, e.g. the atomic and molecular orbitals have been directly implemented in the architecture of the network. Other ingredients such a the Jastrow factor and the backflow transformation kernels can be defined as sub-network allowing for a very flexible functional form.&lt;/p&gt;
+&lt;p&gt;This semi-analytical wave function ansatz allows for fast calculations of the key observables, e.g. the kinetic energy and atomic forces, via the Jacobi Formula. For example in absence of backflow and Jastrow the kinetic energy can be evaluated with the help of  :&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial^2 \det{A}}{\partial x_i^2} = Tr(A^{-1} \frac{\partial^2 A}{\partial x_i^2})$$&lt;/p&gt;
+&lt;p&gt;Hence avoiding a costly computation of the diagonal Hessian via automatic differentiation.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.github.com/NLESC-JCER/QMCTorch/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QMCTorch&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HPC for GW-BSE Simulations</title>
+      <link>/project/elec_struct/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/project/elec_struct/</guid>
+      <description>&lt;p&gt;GW-BSE simulations allows to obtain avery detailled and accurate calculation of the excitation spectrum of small molecular systems. However this approach requires to solve large-scale eigenvalue problems that becomes rapidly untracktable using conventional methods.&lt;/p&gt;
+&lt;p&gt;Using &lt;a href=&#34;https://github.com/votca/xtp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Votca-XTP&lt;/a&gt;, a recent engine for GW-BSE simulations we have implemented Matrix-Free Jacobi-Davidson eigenvalue solvers to accelerate the simulations of small molecule and solve the memory bottleneck associated with the calculations of large systems. Porting these methods to GPU give an additional computational benefits making Votca-XTP a valuable tool for the future of electronic-structure calculations&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-timing-and-memory-consumption-of-the-davidson-solver-compared-to-the-dsyvex-solver-from-lapack-the-davidson-solver-can-be-either-much-faster-than-dsyvex-or-consume-orders-of-magnitude-less-of-memory-depending-on-the-type-of-applications&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Timing and Memory consumption of the Davidson solver compared to the DSYVEX solver from LAPACK. The Davidson solver can be either much faster than DSYVEX or consume orders of magnitude less of memory depending on the type of applications&#34; srcset=&#34;
+               /project/elec_struct/davidson_hu655b746b524b5a8acb38efbe123835a3_249208_4f31b76acc7d7716d37205ce9b8921fc.png 400w,
+               /project/elec_struct/davidson_hu655b746b524b5a8acb38efbe123835a3_249208_7b200bb1c1bf44f99b4b33403cb1a551.png 760w,
+               /project/elec_struct/davidson_hu655b746b524b5a8acb38efbe123835a3_249208_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;/project/elec_struct/davidson_hu655b746b524b5a8acb38efbe123835a3_249208_4f31b76acc7d7716d37205ce9b8921fc.png&#34;
+               width=&#34;760&#34;
+               height=&#34;333&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Timing and Memory consumption of the Davidson solver compared to the DSYVEX solver from LAPACK. The Davidson solver can be either much faster than DSYVEX or consume orders of magnitude less of memory depending on the type of applications
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fab fa-github  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://github.com/votca/xtp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Votca-xtp&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Design of Single Molecule Machines</title>
+      <link>/project/machine/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/machine/</guid>
+      <description>&lt;p&gt;The control of the mechanical properties of single molecule in planar junction holds great promises for the future of nanotechology. To this end a better understanding of the mechanical response of single molecule on conducting surface when excited with a tunnelling current is necessary.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Nanocar_Race&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NanoCar race&lt;/a&gt;  served as a benchmark for scientists around the world to test their design of single molecule machine powered by tunelling current. The &lt;a href=&#34;https://nanocar-race.cnrs.fr/equipes-ch.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Swiss team&lt;/a&gt; won the race on gold surface with their NanoDragster whose design and test was heavily backed by ab-initio calculations.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/machine/ch-molecule3_hu2f2c45ac12e6ca8051df396aa64a08d8_34403_a0d7dad91b4bee43ce126974b4d48930.jpg 400w,
+               /project/machine/ch-molecule3_hu2f2c45ac12e6ca8051df396aa64a08d8_34403_f44d03b34c4311216e620000c64cd41b.jpg 760w,
+               /project/machine/ch-molecule3_hu2f2c45ac12e6ca8051df396aa64a08d8_34403_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;/project/machine/ch-molecule3_hu2f2c45ac12e6ca8051df396aa64a08d8_34403_a0d7dad91b4bee43ce126974b4d48930.jpg&#34;
+               width=&#34;563&#34;
+               height=&#34;342&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/machine/drag_hu407c48d32a988315bf3d043b9c5b19b2_169026_4944433a999f9cf6cbc927e24b45951c.PNG 400w,
+               /project/machine/drag_hu407c48d32a988315bf3d043b9c5b19b2_169026_66125ee04fffaa75ceb0520f7a2bbfbc.PNG 760w,
+               /project/machine/drag_hu407c48d32a988315bf3d043b9c5b19b2_169026_1200x1200_fit_lanczos_2.PNG 1200w&#34;
+               src=&#34;/project/machine/drag_hu407c48d32a988315bf3d043b9c5b19b2_169026_4944433a999f9cf6cbc927e24b45951c.PNG&#34;
+               width=&#34;485&#34;
+               height=&#34;456&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fa fa-newspaper  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://pubs.acs.org/doi/abs/10.1021/acsnano.7b03955&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Design and characterization of an electrically powered single molecule on gold&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Real-Time Time Dependent Density Functional</title>
+      <link>/project/rttddft/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/rttddft/</guid>
+      <description>&lt;p&gt;Simulating the time-dependent dynamics of the electronic density of optically excited molecules represent a fantastic challenge for the development of quatum chemistry. Real-Time Time-Dependent Density Functional Theory holds thr promise to give an accurate evaluation of this dynamics at a reasonable computational cost. In contrast to the linear response time-dependent DFT, RT-TD-DFT directly computes the dynamics of the density in repsonse of its excitation by a transient electromagnetic perturbation. The equation of motion :&lt;/p&gt;
+&lt;p&gt;$$\dot{\rho(t)} = -i\hbar[\mathcal{F}(\rho(t)); \rho(t)]$$&lt;/p&gt;
+&lt;p&gt;where $\mathcal{F}$ is the Fock matrix and $\rho(t)$ the density matrix. Solving this equation for example using ADF to compute the Fock matrix on a localized orbital Slater basis set, allows to follow the population of the different molecular orbital during and after the excitation process. The Fourier transform of the dipole moment can then gives the excitation spectrum of the system.&lt;/p&gt;
+&lt;p&gt;Making no assumption of the type of excitation, RT-TD-DFT can access excitations that linear response cannot grasp. This is for example the case of excitations of core electrons that requires very high-intensity X-Ray pulses.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/rttddft/rttddft_hua8c8b7825654738423974fb9475a97d2_370240_02a79793ef7f9709728a43285fd93c68.jpeg 400w,
+               /project/rttddft/rttddft_hua8c8b7825654738423974fb9475a97d2_370240_3c2c8bcbe54f1cf4927da3b4638eced5.jpeg 760w,
+               /project/rttddft/rttddft_hua8c8b7825654738423974fb9475a97d2_370240_1200x1200_fit_q75_lanczos.jpeg 1200w&#34;
+               src=&#34;/project/rttddft/rttddft_hua8c8b7825654738423974fb9475a97d2_370240_02a79793ef7f9709728a43285fd93c68.jpeg&#34;
+               width=&#34;760&#34;
+               height=&#34;539&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

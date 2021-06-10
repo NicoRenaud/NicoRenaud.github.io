@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Electronic Structure | Academic</title>
+    <link>/tag/electronic-structure/</link>
+      <atom:link href="/tag/electronic-structure/index.xml" rel="self" type="application/rss+xml" />
+    <description>Electronic Structure</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Electronic Structure</title>
+      <link>/tag/electronic-structure/</link>
+    </image>
+    
+    <item>
+      <title>Real-Time Time Dependent Density Functional</title>
+      <link>/project/rttddft/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/rttddft/</guid>
+      <description>&lt;p&gt;Simulating the time-dependent dynamics of the electronic density of optically excited molecules represent a fantastic challenge for the development of quatum chemistry. Real-Time Time-Dependent Density Functional Theory holds thr promise to give an accurate evaluation of this dynamics at a reasonable computational cost. In contrast to the linear response time-dependent DFT, RT-TD-DFT directly computes the dynamics of the density in repsonse of its excitation by a transient electromagnetic perturbation. The equation of motion :&lt;/p&gt;
+&lt;p&gt;$$\dot{\rho(t)} = -i\hbar[\mathcal{F}(\rho(t)); \rho(t)]$$&lt;/p&gt;
+&lt;p&gt;where $\mathcal{F}$ is the Fock matrix and $\rho(t)$ the density matrix. Solving this equation for example using ADF to compute the Fock matrix on a localized orbital Slater basis set, allows to follow the population of the different molecular orbital during and after the excitation process. The Fourier transform of the dipole moment can then gives the excitation spectrum of the system.&lt;/p&gt;
+&lt;p&gt;Making no assumption of the type of excitation, RT-TD-DFT can access excitations that linear response cannot grasp. This is for example the case of excitations of core electrons that requires very high-intensity X-Ray pulses.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/rttddft/rttddft_hua8c8b7825654738423974fb9475a97d2_370240_02a79793ef7f9709728a43285fd93c68.jpeg 400w,
+               /project/rttddft/rttddft_hua8c8b7825654738423974fb9475a97d2_370240_3c2c8bcbe54f1cf4927da3b4638eced5.jpeg 760w,
+               /project/rttddft/rttddft_hua8c8b7825654738423974fb9475a97d2_370240_1200x1200_fit_q75_lanczos.jpeg 1200w&#34;
+               src=&#34;/project/rttddft/rttddft_hua8c8b7825654738423974fb9475a97d2_370240_02a79793ef7f9709728a43285fd93c68.jpeg&#34;
+               width=&#34;760&#34;
+               height=&#34;539&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
